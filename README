@@ -1,1 +1,11 @@
-This file was created by JetBrains PhpStorm 2.1.2 for binding GitHub repository
+Небольшое демо по использованию новых возможностей OpenGraph в Facebooke.
+
+Реализует отправку сообщения в ticker и timeline авторизованного пользователя с сообщением что он сейчас слушает
+
+
+ВНИМАНИЕ!
+
+Чтобы все это заработало, вам нужно будет создать свое приложение, добавить туда namespace, добавить action "listen" и object "song".
+
+Поменять в файлах index.html и index2.html параметры на свои.
+
