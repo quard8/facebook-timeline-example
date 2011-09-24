@@ -21,11 +21,26 @@
     </script>
 
     <meta property="fb:app_id" content="154632764621712" />
-    <meta property="og:type" content="quard_news:movie" />
+    <meta property="og:type" content="quard_news:article" />
     <meta property="og:title" content="Нереальная история &mdash; Серия 2" />
     <meta property="og:image" content="http://img.ivi.ru/static/frames/52348/1107897.2.jpg" />
     <meta property="og:description" content="Нереальная история &mdash; Серия 2" />
     <meta property="og:url" content="http://quard.ru/labs/facebook-timeline-example/index2.html">
+
+    <script type="text/javascript">
+        function post()
+        {
+            FB.api('/me/quard_news:read' +
+                    '?article=http://quard.ru/labs/facebook-timeline-example/index2.html','post',
+                    function(response) {
+            if (!response || response.error) {
+                    alert('Error occured');
+            } else {
+                alert('Post was successful! Action ID: ' + response.id);
+                }
+        });
+        }
+    </script>
 </head>
 <body>
 
@@ -62,7 +77,13 @@
             <h1>Нереальная история &mdash; Серия 2</h1>
         </div>
         <div class="span6">
-            <fb:login-button scope="publish_acions">Login with Facebook</fb:login-button>
+            <fb:login-button scope="publish_actions">Login with Facebook</fb:login-button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span6">
+            <a href="#" class="btn">Отправить</a>
         </div>
     </div>
 </div>
