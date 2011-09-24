@@ -20,17 +20,17 @@
     </script>
 
     <meta property="fb:app_id" content="154632764621712" />
-    <meta property="og:type" content="quardru:article" />
-    <meta property="og:title" content="Нереальная история &mdash; Серия 1" />
-    <meta property="og:image" content="http://img.ivi.ru/static/frames/52347/1107874.2.jpg" />
-    <meta property="og:description" content="Нереальная история &mdash; Серия 1" />
+    <meta property="og:type" content="quardru:song" />
+    <meta property="og:title" content="The Magician - Magic Tape Fifteen" />
+    <meta property="og:image" content="http://i1.sndcdn.com/artworks-000011517440-ht8lrf-large.jpg?1e7f8e7" />
+    <meta property="og:description" content="Listen The Magician - Magic Tape Fifteen" />
     <meta property="og:url" content="http://quard.ru/labs/facebook-timeline-example/index.html">
 
     <script type="text/javascript">
         function post()
         {
-            FB.api('/me/quardru:read' +
-                    '?article=http://quard.ru/labs/facebook-timeline-example/index.html','post',
+            FB.api('/me/quardru:listen' +
+                    '?song=http://quard.ru/labs/facebook-timeline-example/index.html','post',
                     function(response) {
             if (!response || response.error) {
                     alert('Error occured');
@@ -60,21 +60,11 @@
 <div class="container">
     <div class="row " style="margin-top: 40px; height: 400px;">
         <div class="span16">
-            <object type="application/x-shockwave-flash" data="http://www.ivi.ru/video/player?_isB2C=1"
-                    id="flash-video-player" width="100%" height="100%">
-                <param name="base" value="http://www.ivi.ru/images/da/">
-                <param name="allowScriptAccess" value="always">
-                <param name="allowFullScreen" value="true">
-                <param name="wmode" value="opaque">
-                <param name="flashvars" value="videoId=52347&amp;autoStart=-1">
-            </object>
+            <object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F23240557"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F23240557" type="application/x-shockwave-flash" width="100%"></embed> </object>  <span><a href="http://soundcloud.com/themagician/magic-tape-fifteen">Magic Tape Fifteen</a> by <a href="http://soundcloud.com/themagician">TheMagician</a></span>
         </div>
     </div>
 
     <div class="row">
-        <div class="span10">
-            <h1>Нереальная история &mdash; Серия 1</h1>
-        </div>
         <div class="span6">
             <fb:login-button scope="publish_actions">Login with Facebook</fb:login-button>
         </div>
